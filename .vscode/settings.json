@@ -1,0 +1,64 @@
+{
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.tabs.showActions": "always",
+    "terminal.integrated.tabs.showActiveTerminal": "always",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": true,
+    "search.exclude": {
+        "**/target": true,
+        "**/.mvn": true,
+        "**/node_modules": true
+    },
+    "workbench.colorCustomizations": {
+        "[Default Dark Modern]": {
+            "terminal.background": "#0a0e14",
+            "terminal.foreground": "#b3b1ad",
+            "terminalCursor.foreground": "#00ffff",
+            "terminalCursor.background": "#00ffff",
+            "terminal.ansiBlack": "#0a0e14",
+            "terminal.ansiBlue": "#2196f3",
+            "terminal.ansiBrightBlack": "#4d5566",
+            "terminal.ansiBrightBlue": "#59c2ff",
+            "terminal.ansiBrightCyan": "#95e6cb",
+            "terminal.ansiBrightGreen": "#c2d94c",
+            "terminal.ansiBrightMagenta": "#ffee99",
+            "terminal.ansiBrightRed": "#f07178",
+            "terminal.ansiBrightWhite": "#ffffff",
+            "terminal.ansiBrightYellow": "#ffb454",
+            "terminal.ansiCyan": "#59c2ff",
+            "terminal.ansiGreen": "#91b362",
+            "terminal.ansiMagenta": "#c792ea",
+            "terminal.ansiRed": "#ea6c73",
+            "terminal.ansiWhite": "#c7c7c7",
+            "terminal.ansiYellow": "#f99b15",
+            "terminal.selectionBackground": "#253340",
+            "terminalCommandDecoration.defaultBackground": "#00ffff",
+            "terminalCommandDecoration.successBackground": "#91b362",
+            "terminalCommandDecoration.errorBackground": "#ea6c73"
+        }
+    },
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        }
+    },
+    "java.configuration.updateBuildConfiguration": "disabled",
+    "java.compile.nullAnalysis.mode": "disabled",
+    "spring-boot.ls.checkjvm": false,
+    "java.showBuildStatusOnStart": "never",
+    "java.help.firstView": "none",
+    "java.help.showReleaseNotes": "off",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.environmentChangesIndicator": "never",
+    "github.copilot.enable": {
+        "*": false
+    },
+    "github.copilot.chat.enable": false,
+    "github.copilot.inlineSuggest.enable": false,
+    "github.copilot.editor.enableAutoCompletions": false
+}
