@@ -527,6 +527,14 @@ Demonstração da execução do script `populate-data.sh` no ambiente de desenvo
 📖 Acesse o H2 Console em:
    http://localhost:8080/h2-console
 
+Fim
+
+Autor: Andre Guilherme Barreto de Farias
+Matrícula: 202111701842
+TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS [3010]/FLN - Técnico - Subsequente - Florianópolis
+
+=================================================================
+
 ╔════════════════════════════════════════════════════════════════╗
 ║    💡 Execute agora o script de testes: ./test-api.sh         ║
 ╚════════════════════════════════════════════════════════════════╝
@@ -813,7 +821,7 @@ Demonstração da execução do script `test-api.sh` no terminal:
   "descricao": "Uno Vivace",
   "marca": {
     "id": 1,
-    "nome": "Fiat Automóveis"
+    "nome": null
   }
 }
 
@@ -830,22 +838,19 @@ Demonstração da execução do script `test-api.sh` no terminal:
   },
   "cor": {
     "id": 5,
-    "nome": "Azul"
+    "nome": null
   },
   "modelo": {
     "id": 5,
-    "descricao": "Civic",
-    "marca": {
-      "id": 4,
-      "nome": "Honda"
-    }
+    "descricao": null,
+    "marca": null
   },
   "proprietario": {
     "id": 4,
-    "nome": "Pedro Henrique",
-    "celular": "(48) 91111-1111",
-    "email": "pedro@example.com",
-    "dataCadastro": "2025-12-01"
+    "nome": null,
+    "celular": null,
+    "email": null,
+    "dataCadastro": null
   }
 }
 
@@ -860,22 +865,19 @@ Demonstração da execução do script `test-api.sh` no terminal:
   },
   "cor": {
     "id": 6,
-    "nome": "Verde"
+    "nome": null
   },
   "modelo": {
     "id": 6,
-    "descricao": "Onix",
-    "marca": {
-      "id": 5,
-      "nome": "Chevrolet"
-    }
+    "descricao": null,
+    "marca": null
   },
   "proprietario": {
     "id": 5,
-    "nome": "Ana Paula",
-    "celular": "(48) 92222-2222",
-    "email": "ana@example.com",
-    "dataCadastro": "2025-12-01"
+    "nome": null,
+    "celular": null,
+    "email": null,
+    "dataCadastro": null
   }
 }
 
@@ -937,7 +939,118 @@ Demonstração da execução do script `test-api.sh` no terminal:
       "dataCadastro": "2025-12-01"
     }
   },
-  ...
+  {
+    "id": 3,
+    "placa": "DEF-9012",
+    "observacoes": "Carro seminovo",
+    "motor": {
+      "potencia": 154,
+      "tipoCombustivel": "FLEX"
+    },
+    "cor": {
+      "id": 3,
+      "nome": "Prata"
+    },
+    "modelo": {
+      "id": 3,
+      "descricao": "Corolla",
+      "marca": {
+        "id": 3,
+        "nome": "Toyota"
+      }
+    },
+    "proprietario": {
+      "id": 3,
+      "nome": "Carlos Oliveira",
+      "celular": "(48) 97777-7777",
+      "email": "carlos@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  },
+  {
+    "id": 4,
+    "placa": "GHI-3456",
+    "observacoes": "Primeiro veículo",
+    "motor": {
+      "potencia": 85,
+      "tipoCombustivel": "GASOLINA"
+    },
+    "cor": {
+      "id": 4,
+      "nome": "Vermelho"
+    },
+    "modelo": {
+      "id": 4,
+      "descricao": "Palio",
+      "marca": {
+        "id": 1,
+        "nome": "Fiat Automóveis"
+      }
+    },
+    "proprietario": {
+      "id": 1,
+      "nome": "João Silva Santos",
+      "celular": "(48) 99999-0000",
+      "email": "joao.santos@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  },
+  {
+    "id": 5,
+    "placa": "JKL-7890",
+    "observacoes": "Veículo importado",
+    "motor": {
+      "potencia": 150,
+      "tipoCombustivel": "GASOLINA"
+    },
+    "cor": {
+      "id": 5,
+      "nome": "Azul"
+    },
+    "modelo": {
+      "id": 5,
+      "descricao": "Civic",
+      "marca": {
+        "id": 4,
+        "nome": "Honda"
+      }
+    },
+    "proprietario": {
+      "id": 4,
+      "nome": "Pedro Henrique",
+      "celular": "(48) 91111-1111",
+      "email": "pedro@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  },
+  {
+    "id": 6,
+    "placa": "MNO-4567",
+    "observacoes": "Carro zero km",
+    "motor": {
+      "potencia": 116,
+      "tipoCombustivel": "FLEX"
+    },
+    "cor": {
+      "id": 6,
+      "nome": "Verde"
+    },
+    "modelo": {
+      "id": 6,
+      "descricao": "Onix",
+      "marca": {
+        "id": 5,
+        "nome": "Chevrolet"
+      }
+    },
+    "proprietario": {
+      "id": 5,
+      "nome": "Ana Paula",
+      "celular": "(48) 92222-2222",
+      "email": "ana@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  }
 ]
 
 ➤ 24. GET /veiculos/1 - Buscando veículo por ID
@@ -981,44 +1094,174 @@ Demonstração da execução do script `test-api.sh` no terminal:
   },
   "cor": {
     "id": 1,
-    "nome": "Preto Fosco"
+    "nome": null
   },
   "modelo": {
     "id": 1,
-    "descricao": "Uno Vivace",
-    "marca": {
-      "id": 1,
-      "nome": "Fiat Automóveis"
-    }
+    "descricao": null,
+    "marca": null
   },
   "proprietario": {
     "id": 1,
-    "nome": "João Silva Santos",
-    "celular": "(48) 99999-0000",
-    "email": "joao.santos@example.com",
-    "dataCadastro": "2025-12-01"
+    "nome": null,
+    "celular": null,
+    "email": null,
+    "dataCadastro": null
   }
 }
 
+⚠️  ========== TESTES DE VALIDAÇÃO ==========
+
+➤ 26. GET /marcas/999 - Buscando marca inexistente (deve retornar 404)
+
 🗑️  ========== TESTES DE DELEÇÃO ==========
 
-➤ 26. DELETE /veiculos/2 - Deletando veículo XYZ-5678
+➤ 27. DELETE /veiculos/2 - Deletando veículo XYZ-5678
 
 HTTP Status: 204
 
-➤ 27. GET /veiculos - Verificando que o veículo foi deletado
+➤ 28. GET /veiculos - Verificando que o veículo foi deletado
 [
   {
     "id": 1,
     "placa": "ABC-1234",
-    ...
+    "observacoes": "Veículo com manutenção recente",
+    "motor": {
+      "potencia": 75,
+      "tipoCombustivel": "FLEX"
+    },
+    "cor": {
+      "id": 1,
+      "nome": "Preto Fosco"
+    },
+    "modelo": {
+      "id": 1,
+      "descricao": "Uno Vivace",
+      "marca": {
+        "id": 1,
+        "nome": "Fiat Automóveis"
+      }
+    },
+    "proprietario": {
+      "id": 1,
+      "nome": "João Silva Santos",
+      "celular": "(48) 99999-0000",
+      "email": "joao.santos@example.com",
+      "dataCadastro": "2025-12-01"
+    }
   },
   {
     "id": 3,
     "placa": "DEF-9012",
-    ...
+    "observacoes": "Carro seminovo",
+    "motor": {
+      "potencia": 154,
+      "tipoCombustivel": "FLEX"
+    },
+    "cor": {
+      "id": 3,
+      "nome": "Prata"
+    },
+    "modelo": {
+      "id": 3,
+      "descricao": "Corolla",
+      "marca": {
+        "id": 3,
+        "nome": "Toyota"
+      }
+    },
+    "proprietario": {
+      "id": 3,
+      "nome": "Carlos Oliveira",
+      "celular": "(48) 97777-7777",
+      "email": "carlos@example.com",
+      "dataCadastro": "2025-12-01"
+    }
   },
-  ...
+  {
+    "id": 4,
+    "placa": "GHI-3456",
+    "observacoes": "Primeiro veículo",
+    "motor": {
+      "potencia": 85,
+      "tipoCombustivel": "GASOLINA"
+    },
+    "cor": {
+      "id": 4,
+      "nome": "Vermelho"
+    },
+    "modelo": {
+      "id": 4,
+      "descricao": "Palio",
+      "marca": {
+        "id": 1,
+        "nome": "Fiat Automóveis"
+      }
+    },
+    "proprietario": {
+      "id": 1,
+      "nome": "João Silva Santos",
+      "celular": "(48) 99999-0000",
+      "email": "joao.santos@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  },
+  {
+    "id": 5,
+    "placa": "JKL-7890",
+    "observacoes": "Veículo importado",
+    "motor": {
+      "potencia": 150,
+      "tipoCombustivel": "GASOLINA"
+    },
+    "cor": {
+      "id": 5,
+      "nome": "Azul"
+    },
+    "modelo": {
+      "id": 5,
+      "descricao": "Civic",
+      "marca": {
+        "id": 4,
+        "nome": "Honda"
+      }
+    },
+    "proprietario": {
+      "id": 4,
+      "nome": "Pedro Henrique",
+      "celular": "(48) 91111-1111",
+      "email": "pedro@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  },
+  {
+    "id": 6,
+    "placa": "MNO-4567",
+    "observacoes": "Carro zero km",
+    "motor": {
+      "potencia": 116,
+      "tipoCombustivel": "FLEX"
+    },
+    "cor": {
+      "id": 6,
+      "nome": "Verde"
+    },
+    "modelo": {
+      "id": 6,
+      "descricao": "Onix",
+      "marca": {
+        "id": 5,
+        "nome": "Chevrolet"
+      }
+    },
+    "proprietario": {
+      "id": 5,
+      "nome": "Ana Paula",
+      "celular": "(48) 92222-2222",
+      "email": "ana@example.com",
+      "dataCadastro": "2025-12-01"
+    }
+  }
 ]
 
 ✅ Testes concluídos!
